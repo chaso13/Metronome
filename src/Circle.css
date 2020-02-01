@@ -1,0 +1,6 @@
+.center{
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,15%);
+}

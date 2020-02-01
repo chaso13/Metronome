@@ -1,12 +1,15 @@
 import React from 'react';
 import Metronome from './Metronome';
+import Blinker from './Blinker';
 import './index.css';
 
 
 function App() {
   return (
-   <Metronome/>
-    
+    <div>
+      <Blinker/>
+      <Metronome/>
+   </div>
   );
 }
 

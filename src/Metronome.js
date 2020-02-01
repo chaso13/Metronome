@@ -20,7 +20,7 @@ class Metronome extends Component{
     }
     handleBpmChange = event => {
         const bpm = event.target.value;
-        
+
         if (this.state.playing) {
             // Stop the old timer and start a new one
             clearInterval(this.timer);
@@ -36,6 +36,7 @@ class Metronome extends Component{
             this.setState({ bpm });
           }
     };
+
     playClick = () => {
         const { count, beatsPerMeasure } = this.state;
 
@@ -69,13 +70,16 @@ class Metronome extends Component{
                 },
                 this.playClick
             );
+        
         }
-
+        
     }
+    
+    
 
     render(){
        const {playing, bpm} = this.state;
-
+    
         return (
         <div className="metronome"> 
             <div className = "bpm-slider">
